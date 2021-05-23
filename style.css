@@ -1,17 +1,16 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Amatic+SC:wght@700;400&display=swap');
 
-body {
-  background-color: white;
-  font-family: "Open Sans", sans-serif;
-  padding: 5px 25px;
-  font-size: 18px;
-  margin: 0;
-  color: #444;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Amatic SC', cursive;
 }
 
-h1 {
-  font-family: "Merriweather", serif;
-  font-size: 32px;
+p {
+  font-family: 'Oswald', sans-serif;
 }
+
+footer {
+  background-color: #1b394b;
+  color:  #DBDBDB;
+}
+
