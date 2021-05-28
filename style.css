@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 img{
-  width: 80%;
+  width: 70%;
 }
 
 header {
@@ -24,8 +24,8 @@ header {
 }
 
 .logo-box img{
-  margin: 10px 25px;
-  width: 45%;
+  margin: 10px 35px;
+  width: 25%;
   min-width: 100px;
 }
 
@@ -77,6 +77,28 @@ li:hover {
   grid-column: 2/3;
   grid-row: 1/2;
   background-color: #DBDBDB;
+  padding: 0 45px;
+}
+
+.mainContent h1{
+  padding: 0;
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-size: 55px;
+}
+
+.mainContent h2{
+  padding: 0 0 10px 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mainContent p {
+  text-align: justify;
+}
+
+.mainContent a {
+  color:#1b394b;
 }
 
 .mainContent img{
@@ -87,10 +109,27 @@ li:hover {
   margin-right: auto;
 }
 
+.firstLetter {
+  font-family: 'Amatic SC', cursive;
+  font-size: 35px;
+}
+
 .aside{
   grid-column: 1/2;
   grid-row: 1/2;
   background-color: #AABD8C;
+  padding: 25px;
+}
+
+.aside p {
+  margin-top: -10px;
+  padding: 0 7px;
+}
+
+.line {
+  border-top: 2px solid black;
+  width: 55%;
+  margin: -22px 0 17px 0;
 }
 
 footer {
@@ -100,7 +139,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 20px;
+  padding: 5px 35px;
 }
 
 .site-plan {
