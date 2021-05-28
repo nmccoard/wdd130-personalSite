@@ -1,16 +1,168 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Amatic+SC:wght@700;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Amatic+SC:wght@700&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Oswald', sans-serif;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Amatic SC', cursive;
 }
 
-p {
-  font-family: 'Oswald', sans-serif;
+img{
+  width: 70%;
+}
+
+header {
+  background-color: #1b394b;
+  color:  #DBDBDB;
+  display: grid;
+  grid-template-columns: 25% 65% 10%;
+  align-items: center;
+}
+
+.logo-box img{
+  margin: 10px 35px;
+  width: 25%;
+  min-width: 100px;
+}
+
+nav {
+  width: 100%;
+  margin-right: 30px;
+}
+
+ul {
+  margin: 20px;
+  padding: 20px;
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li a {
+  color:  #DBDBDB;
+  font-family: 'Amatic SC', cursive;
+  font-size: 32px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+li a:hover {
+  color: rgb(48, 48, 48);
+  font-weight: bold;
+}
+
+li:hover {
+  background-color: #E7C24F;
+  border: 1px solid rgb(48, 48, 48);
+}
+
+.active {
+  border: 1px solid #DBDBDB;
+  box-shadow: 2px 2px 5px #888888;
+}
+
+.indexBody {
+  display: grid;
+  grid-template-columns: 25% 75%;
+}
+
+.mainContent{
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #DBDBDB;
+  padding: 0 45px;
+}
+
+.mainContent h1{
+  padding: 0;
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-size: 55px;
+}
+
+.mainContent h2{
+  padding: 0 0 10px 0;
+  margin: 0;
+  text-align: center;
+}
+
+.mainContent p {
+  text-align: justify;
+}
+
+.mainContent a {
+  color:#1b394b;
+}
+
+.mainContent img{
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #888888;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.firstLetter {
+  font-family: 'Amatic SC', cursive;
+  font-size: 35px;
+}
+
+.aside{
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #AABD8C;
+  padding: 25px;
+}
+
+.aside p {
+  margin-top: -10px;
+  padding: 0 7px;
+}
+
+.line {
+  border-top: 2px solid black;
+  width: 55%;
+  margin: -22px 0 17px 0;
 }
 
 footer {
   background-color: #1b394b;
   color:  #DBDBDB;
+  font-family: 'Amatic SC', cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 35px;
 }
+
+.site-plan {
+  color:  #DBDBDB;
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.site-plan:hover {
+  color: rgb(48, 48, 48);
+  background-color: #E7C24F;
+  font-weight: bold;
+}
+
+.footerIcons {
+  width: 30px;
+}
+
+#socialMedia a {
+  padding: 1px 3px;
+}
+
+
 
