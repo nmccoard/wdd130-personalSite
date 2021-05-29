@@ -1,29 +1,30 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Amatic+SC:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Amatic+SC:wght@700&display=swap");
 
-body{
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Amatic SC', cursive;
-}
-
-img{
-  width: 70%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Amatic SC", cursive;
 }
 
 header {
   background-color: #1b394b;
-  color:  #DBDBDB;
+  color: #DBDBDB;
   display: grid;
   grid-template-columns: 25% 65% 10%;
   align-items: center;
 }
 
-.logo-box img{
+.logo-box img {
   margin: 10px 35px;
   width: 25%;
   min-width: 100px;
@@ -45,8 +46,8 @@ ul {
 }
 
 li a {
-  color:  #DBDBDB;
-  font-family: 'Amatic SC', cursive;
+  color: #DBDBDB;
+  font-family: "Amatic SC", cursive;
   font-size: 32px;
   text-align: center;
   text-decoration: none;
@@ -73,21 +74,21 @@ li:hover {
   grid-template-columns: 25% 75%;
 }
 
-.mainContent{
+.mainContent {
   grid-column: 2/3;
   grid-row: 1/2;
   background-color: #DBDBDB;
   padding: 0 45px;
 }
 
-.mainContent h1{
+.mainContent h1 {
   padding: 0;
   margin: 5px 0 0 0;
   text-align: center;
   font-size: 55px;
 }
 
-.mainContent h2{
+.mainContent h2 {
   padding: 0 0 10px 0;
   margin: 0;
   text-align: center;
@@ -98,10 +99,11 @@ li:hover {
 }
 
 .mainContent a {
-  color:#1b394b;
+  color: #1b394b;
 }
 
-.mainContent img{
+.mainContent img {
+  width: 60%;
   border-radius: 10px;
   box-shadow: 2px 2px 5px #888888;
   display: block;
@@ -110,11 +112,11 @@ li:hover {
 }
 
 .firstLetter {
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   font-size: 35px;
 }
 
-.aside{
+.aside {
   grid-column: 1/2;
   grid-row: 1/2;
   background-color: #AABD8C;
@@ -132,10 +134,181 @@ li:hover {
   margin: -22px 0 17px 0;
 }
 
+.submitMain {
+  display: grid;
+  grid-template-columns: 65% 35%;
+}
+
+.submitHeroImage {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: #eeeeed;
+}
+
+.submitHeroImage img {
+  width: 100%;
+  height: 100%;
+}
+
+.submitForm {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  background-color: #eeeeed;
+}
+
+.submitForm h1 {
+  margin: 10px 50px;
+  font-size: 55px;
+}
+
+.submitForm p {
+  margin: -12px 55px 10px 55px;
+  font-size: 12px;
+}
+
+.inputForm {
+  width: 75%;
+  position: relative;
+  height: 57px;
+  margin: 0 auto 20px auto;
+  overflow: hidden;
+}
+
+.inputForm input {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background-color: #eeeeed;
+}
+
+.inputForm label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-bottom: 1px solid black;
+}
+
+.inputForm label::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -2px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid #5fa8d3;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.inputForm input:focus + .label-name .content-name,
+.inputForm input:valid + .label-name .content-name {
+  transform: translateY(-120%);
+  font-size: 14px;
+  color: #5fa8d3;
+}
+
+.inputForm input:focus + .label-name::after,
+.inputForm input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+button {
+  margin: 20px auto;
+  font-size: 20px;
+  background-color: #AABD8C;
+  font-family: "Amatic SC", cursive;
+  border: 1px solid rgb(48, 48, 48);
+  box-shadow: 2px 2px 5px #888888;
+}
+
+.submitForm ul {
+  list-style-type: none;
+  display: block;
+}
+
+#feedback {
+  background-color: #eeeeed;
+  grid-column: 1/3;
+  grid-row: 2/3;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  padding: 1em;
+  display: none;
+}
+
+.card {
+  margin-bottom: 20px;
+  width: 65%;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 3px;
+  box-shadow: 1px 1px 4px 1px #888;
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 10px;
+  background-color: #1b394b;
+  color: #DBDBDB;
+}
+
+.card h2 {
+  font-size: 26px;
+  margin: 0;
+  text-align: center;
+  padding-top: 10px;
+  background-color: #1b394b;
+  color: #DBDBDB;
+}
+
+.patternContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  background-color: #AABD8C;
+}
+
+#patternHeading {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 55px;
+  text-decoration: underline;
+  grid-column: 1/3;
+}
+
+.card p {
+  font-size: 12px;
+  margin: 0;
+  padding: 10px 30px;
+}
+
 footer {
   background-color: #1b394b;
-  color:  #DBDBDB;
-  font-family: 'Amatic SC', cursive;
+  color: #DBDBDB;
+  font-family: "Amatic SC", cursive;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -143,8 +316,8 @@ footer {
 }
 
 .site-plan {
-  color:  #DBDBDB;
-  font-family: 'Amatic SC', cursive;
+  color: #DBDBDB;
+  font-family: "Amatic SC", cursive;
   text-align: center;
   text-decoration: none;
   padding: 10px;
@@ -164,5 +337,56 @@ footer {
   padding: 1px 3px;
 }
 
+@media only screen and (max-width: 680px) {
+  ul {
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+  }
 
+  .mainContent {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: #DBDBDB;
+    padding: 0 30px;
+  }
+  .mainContent h1 {
+    font-size: 45px;
+  }
 
+  .mainContent img {
+    width: 90%;
+  }
+
+  .aside {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-color: #AABD8C;
+    padding: 25px;
+  }
+
+  #patternHeading {
+    font-size: 45px;
+  }
+
+  #fly1,
+  #fly2,
+  #fly3,
+  #fly4 {
+    grid-column: 1/3;
+  }
+
+  .submitHeroImage {
+    display: none;
+  }
+
+  .submitForm {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: #eeeeed;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}

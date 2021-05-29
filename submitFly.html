@@ -1,88 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>McCoard Fly Shop | Submit a Fly</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
+
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>McCoard Fly Shop | Submit a Fly</title>
+   <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+   <header>
       <div class="logo-box">
-        <a href="index.html"
-          ><img
-            src="https://cdn.glitch.com/e2dbe541-7ee6-4116-a222-d3a59c659de9%2FFlyShopLogo(1).png?v=1621736037358"
-            alt="McCoard Fly Shop Logo"
-        /></a>
+         <a href="index.html"><img src="https://cdn.glitch.com/e2dbe541-7ee6-4116-a222-d3a59c659de9%2FFlyShopLogo(1).png?v=1621736037358" alt="McCoard Fly Shop Logo" /></a>
       </div>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="patterns.html">Fly Patterns</a></li>
-          <li class="active"><a href="submitFly.html">Submit a Fly</a></li>
-        </ul>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="patterns.html">Fly Patterns</a></li>
+            <li class="active"><a href="submitFly.html">Submit a Fly</a></li>
+         </ul>
       </nav>
-    </header>
-    <main>
-      <div class="submitHeroImage">
-        <img src="https://cdn.glitch.com/e2dbe541-7ee6-4116-a222-d3a59c659de9%2FsubmitFlyPic.png?v=1622171369399" alt="Flyrod and fly photo">
+   </header>
+   <main>
+      <div class="submitMain">
+         <div class="submitHeroImage">
+            <img src="https://cdn.glitch.com/e2dbe541-7ee6-4116-a222-d3a59c659de9%2FsubmitFlyPic.png?v=1622171369399" alt="Flyrod and fly photo">
+         </div>
+         <div id="feedback"></div>
+         <div class="submitForm">
+            <h1>
+               Submit a Fly
+            </h1>
+            <p>If you would like to see a fly featured on our site please fill out the form below.</p>
+            <form action="/my-handling-form-page" method="post">
+               <div class="inputForm">
+                  <input type="text" id="name" name="user_name" autocomplete="off" required />
+                  <label for="name" class="label-name"><span class="content-name">Name:</span></label>
+               </div>
+               <div class="inputForm">
+                  <input type="email" id="mail" name="mail" autocomplete="off" required />
+                  <label for="mail" class="label-name"><span class="content-name">E-mail:</span></label>
+               </div>
+               <div class="inputForm">
+                  <input type="text" id="pattern" name="pattern" autocomplete="off" required />
+                  <label for="pattern" class="label-name"><span class="content-name">Fly Patter Name:</span></label>
+               </div>
+               <div class="inputForm">
+                  <input type="text" id="reference" name="reference" autocomplete="off" required />
+                  <label for="reference" class="label-name"><span class="content-name">Reference:</span></label>
+               </div>
+               <div class="inputForm">
+                  <button type="submit">Submit</button>
+               </div>
+               </ul>
+            </form>
+         </div>
       </div>
-      <div id="feedback"></div>
-      <div class="submitForm">
-        <h1>
-          Submit a Fly
-        </h1>
-        <form action="/my-handling-form-page" method="post">
-          <ul>
-            <li>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="user_name" />
-            </li>
-            <li>
-              <label for="mail">E-mail:</label>
-              <input type="email" id="mail" name="user_email" />
-            </li>
-            <li>
-              <label for="pattern">Fly Patter Name:</label>
-              <input type="text" id="pattern" name="pattern" />
-            </li>
-            <li>
-              <label for="referance">Fly Patter Name:</label>
-              <input type="text" id="referance" name="referance" />
-            </li>
-            <li class="button">
-              <button type="submit">Submit</button>
-            </li>
-          </ul>
-        </form>
-      </div>
-    </main>
+   </main>
 
-    <footer>
+   <footer>
       <div class="footerPg">
-        &copy; 2021 Nathan M<sup>c</sup>Coard - BYU-I WDD130.18
+         &copy; 2021 Nathan M<sup>c</sup>Coard - BYU-I WDD130.18
       </div>
       <a class="site-plan" href="site-plan.html">Site Plan</a>
       <div id="socialMedia">
-        <a href="https://www.facebook.com"
-          ><img
-            src="https://cdn.glitch.com/8044f18a-93d6-47d4-ad74-c935118aca86%2Fwhite%20facebook%20icon.png?v=1620089845609"
-            alt="Facebook logo"
-            class="footerIcons"
-        /></a>
-        <a href="https://www.twitter.com"
-          ><img
-            src="https://cdn.glitch.com/8044f18a-93d6-47d4-ad74-c935118aca86%2Fwhite%20twitter%20icon.png?v=1620089845609"
-            alt="Twitter logo"
-            class="footerIcons"
-        /></a>
-        <a href="https://www.instagram.com"
-          ><img
-            src="https://cdn.glitch.com/8044f18a-93d6-47d4-ad74-c935118aca86%2Fwhite%20instagram%20icon.png?v=1620089845609"
-            alt="Instagram logo"
-            class="footerIcons"
-        /></a>
+         <a href="https://www.facebook.com"><img src="https://cdn.glitch.com/8044f18a-93d6-47d4-ad74-c935118aca86%2Fwhite%20facebook%20icon.png?v=1620089845609" alt="Facebook logo" class="footerIcons" /></a>
+         <a href="https://www.twitter.com"><img src="https://cdn.glitch.com/8044f18a-93d6-47d4-ad74-c935118aca86%2Fwhite%20twitter%20icon.png?v=1620089845609" alt="Twitter logo" class="footerIcons" /></a>
+         <a href="https://www.instagram.com"><img src="https://cdn.glitch.com/8044f18a-93d6-47d4-ad74-c935118aca86%2Fwhite%20instagram%20icon.png?v=1620089845609" alt="Instagram logo" class="footerIcons" /></a>
       </div>
-    </footer>
-  </body>
+   </footer>
+
+   <script>
+      const feedbackElement = document.getElementById("feedback");
+      const formElement = document.forms[0];
+      const formName = document.getElementById("name");
+      const formEmail = document.getElementById("mail");
+      const formPattern = document.getElementById("pattern");
+      const formRef = document.getElementById("reference");
+
+      formElement.addEventListener("submit", function(e) {
+         e.preventDefault();
+         feedbackElement.innerHTML =
+            "Hello " +
+            formName.value +
+            "! Thank you for your Submission. We will let you know if your patten was selected. Enjoy the rest of the site";
+         feedbackElement.style.display = "block";
+
+         formName.value = "";
+         formEmail.value = "";
+         formPattern.value = "";
+         formRef.value = "";
+      });
+   </script>
+</body>
+
 </html>
