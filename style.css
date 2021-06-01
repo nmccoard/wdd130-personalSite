@@ -136,7 +136,7 @@ li:hover {
 
 .submitMain {
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 61% 39%;
 }
 
 .submitHeroImage {
@@ -214,15 +214,19 @@ li:hover {
   transition: all 0.3s ease;
 }
 
-.inputForm input:focus + .label-name .content-name,
-.inputForm input:valid + .label-name .content-name {
+.inputForm input:focus + .label-name .content-name{
   transform: translateY(-120%);
   font-size: 14px;
   color: #5fa8d3;
 }
 
-.inputForm input:focus + .label-name::after,
-.inputForm input:valid + .label-name::after {
+.inputForm input:valid + .label-name .content-name {
+  transform: translateY(-120%);
+  font-size: 14px;
+  color: #AABD8C;
+}
+
+.inputForm input:focus + .label-name::after {
   transform: translateX(0%);
 }
 
@@ -338,10 +342,22 @@ footer {
 }
 
 @media only screen and (max-width: 680px) {
+  header {
+    grid-template-columns: 25% 73% 2%;
+  }
+
+  .logo-box img {
+    margin: 7px 20px;
+  }
+
+  nav {
+    margin: 0 0 0 5px;
+  }
+
   ul {
     flex-direction: column;
     padding: 10px;
-    margin: 10px;
+    margin: 7px;
   }
 
   .mainContent {
