@@ -20,7 +20,7 @@ header {
   background-color: #1b394b;
   color: #DBDBDB;
   display: grid;
-  grid-template-columns: 25% 65% 10%;
+  grid-template-columns: 20% 65% 15%;
   align-items: center;
 }
 
@@ -114,6 +114,25 @@ li:hover {
 .firstLetter {
   font-family: "Amatic SC", cursive;
   font-size: 35px;
+}
+
+.recipe {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 18px;
+}
+
+.recipe th {
+  font-family: "Amatic SC", cursive;
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+.right {
+  text-align: right;
+  padding-right: 12px;
 }
 
 .aside {
@@ -214,7 +233,7 @@ li:hover {
   transition: all 0.3s ease;
 }
 
-.inputForm input:focus + .label-name .content-name{
+.inputForm input:focus + .label-name .content-name {
   transform: translateY(-120%);
   font-size: 14px;
   color: #5fa8d3;
@@ -307,6 +326,23 @@ button {
   font-size: 12px;
   margin: 0;
   padding: 10px 30px;
+}
+
+.shop h1 {
+  padding: 0;
+  margin: 5px 0 0 0;
+  text-align: center;
+  font-size: 55px;
+}
+
+.shop h2 {
+  padding: 0 0 10px 0;
+  margin: 0;
+  text-align: center;
+}
+
+#shopPic {
+  width: 100%;
 }
 
 footer {
